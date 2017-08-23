@@ -4,4 +4,21 @@ eureka:
   client:
     service-url:
       defaulZone: http://localhost:8761/eureka
+ 
+ 
       
+turbine:
+  aggregator: 
+     clusterConfig: ITEMINFO
+  appConfig: ITEMINFO, ITEMREVIEW
+
+
+
+logging:
+  level:
+    com.springframework.cloud.netflix.eureka: debug
+    com.netflix.eureka: debug
+    com.netflix.discovery: debug
+    org.springframework.cloud.netflix: debug
+  
+    
